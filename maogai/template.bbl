@@ -1,0 +1,9 @@
+\providecommand{\href}[2]{#2}\begingroup\zihao{5}\begin{thebibliography}{1}\linespread{1}\selectfont\setlength{\baselineskip}{16pt}\setlength{\parskip}{0pt}
+\makeatletter
+\providecommand \href@noop [0]{\@secondoftwo}%
+
+\bibitem{xjp}
+张瑞静. { 理论视界｜传承红色基因 赓续红色血脉}[Z].
+  河北新闻网.
+
+\end{thebibliography}\endgroup
