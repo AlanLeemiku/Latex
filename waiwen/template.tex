@@ -1,0 +1,164 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode 
+
+% \documentclass[AutoFakeBold]{LZUThesis}
+\documentclass[AutoFakeBold]{LZUThesis}
+\usepackage{multirow}
+\usepackage{threeparttable}
+\CTEXsetup[name={第,部分}]{chapter}
+\lstset{
+language = MATLAB,
+backgroundcolor=\color{white},   % choose the background color; you must add \usepackage{color} or \usepackage{xcolor}  
+basicstyle=\footnotesize,        % the size of the fonts that are used for the code  
+breakatwhitespace=false,         % sets if automatic breaks should only happen at whitespace  
+breaklines=true,                 % sets automatic line breaking  
+captionpos=bl,                    % sets the caption-position to bottom  
+% commentstyle=\color{green},    % comment style  
+% deletekeywords={...},            % if you want to delete keywords from the given language  
+% escapeinside={\%*}{*)},          % if you want to add LaTeX within your code  
+extendedchars=true,              % lets you use non-ASCII characters; for 8-bits encodings only, does not work with UTF-8  
+frame=shadowbox,                    % adds a frame around the code  
+keepspaces=true,                 % keeps spaces in text, useful for keeping indentation of code (possibly needs columns=flexible)  
+keywordstyle=\color{blue},       % keyword style  
+% language=Python,                 % the language of the code  
+morekeywords={*,...},            % if you want to add more keywords to the set  
+numbers=left,                    % where to put the line-numbers; possible values are (none, left, right)  
+numbersep=5pt,                   % how far the line-numbers are from the code  
+numberstyle=\tiny\color{gray}, % the style that is used for the line-numbers  
+rulecolor=\color{black},         % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. comments (green here))  
+showspaces=false,                % show spaces everywhere adding particular underscores; it overrides 'showstringspaces'  
+showstringspaces=false,          % underline spaces within strings only  
+showtabs=false,                  % show tabs within strings adding particular underscores  
+stepnumber=1,                    % the step between two line-numbers. If it's 1, each line will be numbered  
+stringstyle=\color{orange},     % string literal style  
+tabsize=2,                       % sets default tabsize to 2 spaces  
+% title=signalAnalysis.m           % show the filename of files included with \lstinputlisting; also try caption instead of title  
+}  
+
+\begin{document}
+%=====%
+%
+%封皮页填写内容
+%
+%=====%
+
+% 标题样式 使用 \title{{}}; 使用时必须保证至少两个外侧括号
+%  如: 短标题 \title{{第一行}},  
+% 	      长标题 \title{{第一行}{第二行}}
+%             超长标题\tiitle{{第一行}{...}{第N行}}
+
+\title{{时代激流中的文学碰撞}}
+
+
+
+% 标题样式 使用 \entitle{{}}; 使用时必须保证至少两个外侧括号
+%  如: 短标题 \entitle{{First row}},  
+% 	      长标题 \entitle{{First row}{ Second row}}
+%             超长标题\entitle{{First row}{...}{ Next N row}}
+% 注意:  英文标题多行时 需要在开头加个空格 防止摘要标题处英语单词粘连.
+
+\author{\CJKfontspec{楷体}李文涛}
+\major{电子信息基地班}
+\college{320200928101}
+\grade{2020级}
+
+
+
+\maketitle
+\frontmatter
+
+%中文摘要
+\ZhAbstract{
+    经过半学期的外国文学学习，在此对自己所学做一个总结，记录自己对于此课程的思考以及如何将这门课变为今后一直影响我的财富。
+
+    在这门课中，最令我印象深刻的就是在时代的变化中文学思想的发展，所以我用《时代激流中的文学碰撞》来概括我对这个阶段学习的认识。跟随着老师的步伐，我领略了外国文学在变化过程中展现出的精彩思潮，不断涌现的优秀人类思想将我深深感染。陶醉于外国文学所带来的精彩精神世界。对于所学进行了自我审视和思考，对西方文学有了进一步的了解，从时代、中西方差异、文学手法、人文精神等方面对西方文学进行自我思考和总结。
+
+    在今后的学习过程中，我会将学到的知识、体会到的思考模式牢记心中，能在大学的学习生活中进行更加全面的发展。
+    
+}
+{外国文学，思潮，文学手法，时代，人文精神}
+
+
+%英文摘要
+\EnAbstract{After half a semester of foreign literature study, I hereby make a summary of what I have learned, record my thinking about this course and how to turn this course into a wealth that will always affect me in the future.
+
+In this course, what impresses me most is the development of literary thoughts in the changing times, so I use Literary Collision in the Current of The Times to summarize my understanding of this stage of study. Following the teacher's steps, I experienced the wonderful thoughts of foreign literature in the process of change, and I was deeply infected by the emerging excellent human thoughts. Revel in the wonderful spiritual world brought by foreign literature. Through self-examination and reflection on what I have learned, I have a further understanding of Western literature, and self-reflection and summary of Western literature from the aspects of times, differences between China and the West, literary techniques, humanistic spirit and so on.
+
+In the future study, I will keep in mind the knowledge I have learned and the thinking mode I have experienced, so that I can develop more comprehensively in the study and life of the university.
+    \fontspec{Times New Roman}}
+{Foreign literature, trend of thought, literary technique, times, humanistic spirit}
+
+%生成目录
+% \tableofcontents
+% \addcontentsline{toc}{chapter}{目录}
+% \thispagestyle{empty}
+
+
+%文章主体
+\mainmatter
+
+\chapter{学有所得}
+
+\section{外国文化的发展}
+在课上，我学到了外国文学随着历史的不断变迁的过程。文学是文化的一种表现方式，西方文化在历史变迁中有着几种形态，由古希腊罗马文化和古希伯来文化交融摩擦，迸发出思想的火花。我学习到了早期基督教的思想形态，“人是万物的尺度”，他们以人为中心的人本主义精神意识令我印象深刻。他们直面人性，不断向自己发出质疑，探究人的存在意义，他们“神——原欲——人”三位一体的原欲型的世俗人本文化是一种独特的“个人主义”表现。
+
+在文艺复兴时期，西方高举着“人本主义”大旗向基督教的宗教神本主义发起反抗，是人性自我的觉醒。对此，我认为，这也导致了思想的形而上。对比中国同时期的思想，两者就显示出巨大的差异。
+在外国历史的发展中，人们的思想和文学创作随着一起发展，例如《悲剧的诞生》体现着“思潮”的两重性，它们此起彼伏，相互作用，一同构成了一个时代的文化风貌。这是人类思想的结晶，矛盾会唤起更多的、更好的思想，让文学创作始终反映着时代的脉搏，成为一个时代人们奏出的主旋律。
+
+在西方神话中，神与神之间的故事更能反应西方的思想形态。在西方神话中，无处不体现着对神的崇拜和向往，但西方神话中的神并非十全十美，他们也会尔虞我诈、相互猜疑。神是人意志的体现，在西方神话中神的所作所为、所思所想都反应了他们崇尚自由、民主、利己等等的思想。
+
+\section{读《俄狄浦斯王》}
+
+《俄狄浦斯王》是一部经典的悲剧戏剧。讲述了俄狄浦斯杀父娶母、自我流放最后一无所有的悲剧。向我们展示了人与人之间的难言之隐，展现了俄狄浦斯想要认识自我，对身世刨根问底，与自己的身世做抗争的精神。该剧将事件线索和矛盾把握的恰到好处，俄狄浦斯的身世戏剧性地逐步被各个关键人物所知，把知晓身世后的必然后果与俄狄浦斯的极力追问激起尖锐的矛盾。俄狄浦斯本人并没有什么过错，他追寻自己身世也是为了人民，是无私伟大的，他本人有着极高的人格魅力，这也导致了他身边的人不想让他得知真相，因为这无疑会破坏现在美好的现状，将俄狄浦斯王打入悲痛崩溃的深渊。俄狄浦斯的性格注定了悲剧的发生，他性格正直、无私但固执，正是如此才会让最后的真相大白所导致的悲剧深入人心。
+
+\chapter{学有所想}
+在学习外国文学经典的过程中，我对西方对自我认识的探究有了更深一步的了解，在上这门课之前，我对西方文化的了解也仅限于看过一些类似于《童年》、《巴黎圣母院》、《悲惨世界》等一些西方著作和类似于《希腊神话》一类的西方神话故事。对于西方的思想意识形态并没有一个系统的了解。但西方神话中的有血有肉的众神和从小人物视角下的西方社会十分吸引我。
+
+
+\section{时代成就文学}
+思想的碰撞能够孕育出反映时代的伟大作品，如《悲惨世界》、《巴黎圣母院》，这些作品都反映了一个时代的模样，正如《双城记》里所描述的“这是一个最好的时代，也是一个最坏的时代；这是一个智慧的年代，这是一个愚蠢的年代；这是一个信任的时期，这是一个怀疑的时期；这是一个光明的季节，这是一个黑暗的季节；这是希望之春，这是失望之冬；人们面前应有尽有，人们面前一无所有；人们正踏上天堂之路，人们正走向地狱之门。”时代造就一个时期的独特文学，文学反应一个时代的风貌。
+
+在时代的思潮中，许多派系相互排斥、相互促进，此起彼伏，相互反拨和超越，构成西方文化发展史的重要景观。像以狄俄尼索斯为代表的“酒神精神”（特点是狂喜）和以太阳神阿波罗为代表的“日神精神”（特点是规范、阳刚），两者是非理性文学思潮和理性文艺思潮相互较量发展的一个很好的例子。历史和文化联系在一起，在古希腊的发展中，克里特文化、迈锡尼文化蓬勃发展，《伊利亚特》《奥德赛》《俄狄浦斯王》在时代的呼唤中孕育而生，满足人们恋母等思想情结。在生产力低下的时候，就用思想去征服自然。在社会混乱时，就拿文学作品来抨击社会，表达自己的不满。
+
+
+\section{中西方文化的差异}
+在学习这门课程后，对于中西方文化差异有了一定的了解。首先由于地区的差异，生产方式导致了生产资料积累方式的不同，沿海的人更倾向获取更多的利益，这就导致了人们对权利的向往，崇尚力量，孕育了人权的概念，实现了一定程度上的民主，物质上较为富裕，思想受到启发的人们就向往寻求思想上的富裕，向往更加超脱的神性，建立起西方神话体系。另一方面，在早期人们在一定程度上有思想和言论的自由，使得西方文学蓬勃发展。
+
+而中国的人们更倾向于稳定的生活，安土重迁，希望有一个和平自给自足的小农生活。作品有很大一部分是描写自己的生活，包含着对生活的向往。早期的中国神话故事中也是大多是和人们生活息息相关的题材。
+
+
+\section{外国文学的作品风格}
+相比于我国的文学作品，西方文学作品用词直接、“激进”，特别是在戏剧中，用词宏伟大气，比起一般的文学作品，更像是教堂的颂歌。更多的外国文学作品在很早就贴近“白话文”，相比于我国早期作品晦涩的文言文，更能够在大众之间流传。外国文学在人物形象刻画上，多用戏剧性的情节和对话来进行描写，借用文学作品中的人物去观察社会、反映社会，借作品中人物之口，表达自己的意志。
+
+在对事件的描述上，外国文学用词从不避讳，但并非“直白”，考究起来也有其精妙之处，从不同的事件和线索可以反映出不同人物的形象和心理、社会的大众道德评价标准。让我们能够身临其境地感受到作者想要给我们展现的时代风貌。我认为这是外国文学值得一提的特点。
+
+\section{外国文学中蕴含的人文精神}
+外国文学反映的是一个地区、一个民族的思想意识形态。在外国文学中的神话故事中，神身上的勇气、懊恼、正义、善良是人们所向往的，同样神身上的背德、邪恶、胆小也是人们所唾弃的。与我国古代的神不一样，神并非十全十美，而是有缺陷的。艺术来源于生活但高于生活，人们将神话作为一种精神寄托，作为自己对理想形象的向往。同时基督教的神学的奉献思想也是人们在高压环境下的一种派遣，也是权力高层用来控制人们的工具，在社会黑暗时，神既是精神的寄托又是痛苦的来源，这种矛盾更促进了人们意识的觉醒和激进。
+
+\chapter{学有所用}
+前面提到了外国文学中所蕴含的人文精神，我们可以从其中汲取对我们生活有用的部分，支持我们更好的完善自己，更好地向前发展。
+
+认识自己一直是一个永恒地话题，我是谁？我从哪里来？又该去往何处？这三个终极问题放在当下疫情显得比以往更有讨论价值，不论是外国还是我国文学，都有着对自身本质的探索，从外国理性的一面可以补充我们原本人文精神中感性过多的部分，在看待事物时更加理性，更主观。当下出行困难，人们在网络上的交流更加多元，网络环境鱼龙混杂，对自己有清晰的认识十分重要。
+
+在大学生活中，人的发展应该多元化，在进行专业知识学习的过程当中，我们也应该不忘涵养自己的内心，多读书，在大学提供这么优秀的平台的同时，我们应该抓住机会提高自己的眼界，多阅读一些著作，从中汲取有用的思考方法和处事方法。
+
+\backmatter
+
+
+% %=======%
+% %引入参考文献文件
+% %=======%
+\bibdatabase{bib/POC}%bib文件名称 仅修改bib/ 后部分
+\printbib
+\nocite{*} %显示数据库中有的,但是正文没有引用的文献
+
+
+% \Appendix
+
+% 这里是附录页,可要可不要
+
+% \Thanks.
+
+
+
+\end{document}
